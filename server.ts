@@ -36,8 +36,9 @@ const dir: string = '.';
 app.use(express.static(dir));
 app.use(serveIndex(dir, { icons: true }));
 
-app.listen(3000, () => {
-    console.log('Example app listening on port 3000!');
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`);
 });
 
 
